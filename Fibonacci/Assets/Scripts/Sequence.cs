@@ -18,7 +18,7 @@ public class Sequence : MonoBehaviour
 
     public AudioSource mario;
     
-    public int n = 1;
+    public int n = 0;
 
     private void Update()
     {
@@ -54,7 +54,7 @@ public class Sequence : MonoBehaviour
     public void ButtonPress()
     {
         fibonacciText.enabled = true;
-        int number = Fib(n);
+        int number = Fib(n + 1);
         fibonacciText.text = number.ToString();
         n++;
 
